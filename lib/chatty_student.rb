@@ -1,4 +1,4 @@
-class ChattyStudent
+class ChattyStudent < Student
   def hello
     super
     puts "How are you doing today? I'm okay, but I'm kind of tired.
@@ -8,6 +8,6 @@ class ChattyStudent
   end
 
   def raise_hand
-    10.times
+    10.times {super}
   end
 end
